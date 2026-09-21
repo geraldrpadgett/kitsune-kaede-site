@@ -1,0 +1,13 @@
+{
+  "name": "kitsune-kaede-site",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Official website for Kaede Kitsune — a cozy creator with fox magic, games & art.",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy"
+  },
+  "devDependencies": {
+    "wrangler": "^4.0.0"
+  }
+}
