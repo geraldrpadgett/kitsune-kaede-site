@@ -10,6 +10,7 @@ This is a lightweight static site deployed on Cloudflare Workers Static Assets.
 - Hosting: Cloudflare Workers
 - Production domain: https://kitsunekaede.com
 - Deployment branch: `main`
+- Continuous deployment: Cloudflare Git integration
 
 ## Local development
 
