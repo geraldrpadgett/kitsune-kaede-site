@@ -35,7 +35,6 @@ body {
 }
 
 a { color: inherit; }
-img { display: block; max-width: 100%; }
 button, a { -webkit-tap-highlight-color: transparent; }
 
 ::selection {
@@ -83,15 +82,9 @@ button, a { -webkit-tap-highlight-color: transparent; }
 .footer-brand {
   display: inline-flex;
   align-items: center;
-  gap: 12px;
   text-decoration: none;
   font-weight: 700;
   letter-spacing: .01em;
-}
-
-.brand img,
-.footer-brand img {
-  filter: drop-shadow(0 8px 24px rgba(240, 106, 56, .2));
 }
 
 .site-nav {
@@ -111,11 +104,13 @@ button, a { -webkit-tap-highlight-color: transparent; }
 
 .hero {
   min-height: calc(100vh - 88px);
-  display: grid;
-  grid-template-columns: 1.08fr .92fr;
-  gap: clamp(40px, 8vw, 110px);
+  display: flex;
   align-items: center;
   padding: 72px 0 100px;
+}
+
+.hero-copy {
+  max-width: 780px;
 }
 
 .eyebrow {
@@ -210,31 +205,6 @@ h1 em {
   height: 3px;
   border-radius: 50%;
   background: var(--maple);
-}
-
-.hero-mark-wrap {
-  position: relative;
-  min-height: 460px;
-  display: grid;
-  place-items: center;
-}
-
-.hero-glow {
-  position: absolute;
-  width: min(410px, 80vw);
-  aspect-ratio: 1;
-  border-radius: 50%;
-  background:
-    radial-gradient(circle, rgba(240,106,56,.18) 0%, rgba(169,55,43,.08) 40%, transparent 70%);
-  filter: blur(8px);
-}
-
-.hero-mark-simple {
-  position: relative;
-  width: min(330px, 70vw);
-  filter:
-    drop-shadow(0 0 30px rgba(240,106,56,.18))
-    drop-shadow(0 28px 46px rgba(0,0,0,.4));
 }
 
 .follow-section {
@@ -336,13 +306,8 @@ h1 em {
 
 @media (max-width: 900px) {
   .hero {
-    grid-template-columns: 1fr;
     min-height: auto;
     padding-top: 60px;
-  }
-
-  .hero-mark-wrap {
-    min-height: 330px;
   }
 
   .follow-panel {
@@ -388,14 +353,6 @@ h1 em {
   }
 
   .button { width: 100%; }
-
-  .hero-mark-wrap {
-    min-height: 260px;
-  }
-
-  .hero-mark-simple {
-    width: min(250px, 68vw);
-  }
 
   .follow-section {
     padding: 40px 0 90px;
