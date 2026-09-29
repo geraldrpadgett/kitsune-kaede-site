@@ -330,6 +330,10 @@ h1 em {
   gap: 18px;
 }
 
+.cause-grid.single {
+  grid-template-columns: minmax(0, 760px);
+}
+
 .cause-card {
   min-height: 100%;
   border: 1px solid var(--line);
