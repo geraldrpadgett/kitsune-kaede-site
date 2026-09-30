@@ -26,3 +26,5 @@ Cloudflare's Git integration deploys pushes to `main` automatically. Manual depl
 ```bash
 npm run deploy
 ```
+
+- Lore and VTuber model sections are maintained on the homepage.
